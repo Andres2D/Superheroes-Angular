@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="result.img" alt="">
+        <h1 class="text-center">{{result.nombre}}</h1>
+    </div>
+    <div class="col-md-8">
+        <p>{{result.bio}}</p>
+        <p><small class="text-muted">{{result.aparicion}}</small></p>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" [routerLink]="['/heroes']">Volver</button>
+    </div>
+
+</div>

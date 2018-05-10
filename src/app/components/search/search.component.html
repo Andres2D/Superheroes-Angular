@@ -1,0 +1,13 @@
+<h1>Heroes</h1>
+<hr>
+<div class="card-columns">
+  <div class="card" *ngFor="let item of resultadoB">
+    <img class="card-img-top" [src]="item.img" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.nombre}}</h5>
+      <p class="card-text">{{item.bio}}</p>
+      <p class="card-text"><small class="text-muted">{{item.aparicion}}</small></p>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="irtoheroe(item.nombre)">Ver Mas</button>
+    </div>
+  </div>
+</div>
